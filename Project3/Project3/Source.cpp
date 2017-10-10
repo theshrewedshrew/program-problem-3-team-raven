@@ -16,7 +16,7 @@ Three Digit Ascend Descend Selection
 // Namespaces
 using namespace std;
 
-//variables
+//variables defined globally
 int x;
 int A;
 int B;
@@ -39,7 +39,7 @@ void main() {
 	cout << "Enter a three digit number. \n";
 	cin >> x;
 
-A = (x / 100);
+A = (x / 100); // A gets digit in the hundreths place 
 B = (x - A * 100) / 10;
 C = (x - A * 100 - (B * 10));
 
